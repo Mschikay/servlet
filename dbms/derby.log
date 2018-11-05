@@ -131,3 +131,9 @@ java.sql.SQLException: 数据库“vegetable”未找到。
 ============= end nested exception, level (1) ===========
 Cleanup action completed
 Sun Nov 04 18:08:55 EST 2018 Thread[DRDAConnThread_3,5,main] (DATABASE = vegetable), (DRDAID = {5}), 数据库“vegetable”未找到。
+----------------------------------------------------------------
+Mon Nov 05 14:19:27 EST 2018：正在关闭 Derby 引擎
+----------------------------------------------------------------
+Mon Nov 05 14:19:27 EST 2018:
+正在使用类加载程序 sun.misc.Launcher$AppClassLoader@6f94fa3e 关闭数据库目录 /Volumes/Code/Previous Content/grad/2018_2019/web/assign3/Assignment3/dbms/PreferVegetable 上的实例 560740aa-0166-e0f8-17d9-ffff83e258c1
+----------------------------------------------------------------
