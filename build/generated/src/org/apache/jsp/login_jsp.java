@@ -48,28 +48,32 @@ public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("<html>\n");
       out.write("    <head>\n");
       out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
-      out.write("        <title>JSP Page</title>\n");
+      out.write("        <title>Login Page</title>\n");
       out.write("        <link href=\"css/login.css\" rel=\"stylesheet\">\n");
-      out.write("        <link href=\"css/bootstrap.min.css\" rel=\"stylesheet\">\n");
+      out.write("        <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css\" integrity=\"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm\" crossorigin=\"anonymous\">\n");
+      out.write("        ");
+      pkg1.myBean ub = null;
+      synchronized (session) {
+        ub = (pkg1.myBean) _jspx_page_context.getAttribute("ub", PageContext.SESSION_SCOPE);
+        if (ub == null){
+          ub = new pkg1.myBean();
+          _jspx_page_context.setAttribute("ub", ub, PageContext.SESSION_SCOPE);
+        }
+      }
       out.write("\n");
       out.write("    </head>\n");
       out.write("    <body>  \n");
       out.write("        <form action=\"/Assignment3/LoginServlet\" method=\"post\" class=\"formLogin\">\n");
       out.write("            <h1 class=\"font-weight-normal\">Please Login</h1>\n");
-      out.write("            <label for=\"inputEmail\" class=\"sr-only\">Email address</label>\n");
-      out.write("            <input type=\"text\" id=\"username\" class=\"form-control\" placeholder=\"Username\" required autofocus>\n");
+      out.write("            <label for=\"inputName\" class=\"sr-only\">username</label>\n");
+      out.write("            <input type=\"text\" id=\"username\" name=\"uname\" class=\"form-control\" placeholder=\"Username\" required autofocus>\n");
       out.write("            <label for=\"inputPassword\" class=\"sr-only\">Password</label>\n");
-      out.write("            <input type=\"password\" id=\"inputPassword\" class=\"form-control\" placeholder=\"Password\" required>\n");
+      out.write("            <input type=\"password\" id=\"inputPassword\" name=\"password\" class=\"form-control\" placeholder=\"Password\" required>\n");
       out.write("            <button id=\"login\" class=\"btn btn-lg btn-primary btn-block\" type=\"submit\">login</button>   \n");
       out.write("         \n");
-      out.write("            ");
-
-              String hint = (String)request.getAttribute("hint");
-              if (hint!=null){
-                out.print(hint);
-              }
-                
-      out.write("\n");
+      out.write("            <p>");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${hint}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("</p>\n");
       out.write("        </form>\n");
       out.write("    </body>\n");
       out.write("</html>\n");

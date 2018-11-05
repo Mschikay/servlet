@@ -57,8 +57,7 @@ form.formLogin > input:focus{
     background-color: lightgray;
 }
 form.formLogin > h1{
-    width: 300px;
-    margin: 15px auto;
+    width: 100%;
     text-align: center;
 }
 #login, #like{

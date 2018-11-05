@@ -1,0 +1,133 @@
+Sun Nov 04 18:04:10 EST 2018 : Apache Derby 网络服务器 - 10.10.2.0 - (1582446) 已启动并准备接受端口 1527 上的连接
+----------------------------------------------------------------
+Sun Nov 04 18:04:10 EST 2018:
+正在使用类加载程序 sun.misc.Launcher$AppClassLoader@6f94fa3e 引导数据库
+目录 /Volumes/Code/Previous Content/grad/2018_2019/web/assign3/Assignment3/dbms/PreferVegetable 中的 Derby 版本 The Apache Software Foundation - Apache Derby - 10.10.2.0 - (1582446) 实例 a816c00e-0166-e0f8-17d9-ffff83e258c1
+已从 file:/Applications/NetBeans/glassfish-4.1.1/javadb/lib/derby.jar 加载
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_191-b12
+user.dir=/Applications/NetBeans/glassfish-4.1.1/javadb
+os.name=Mac OS X
+os.arch=x86_64
+os.version=10.13.6
+derby.system.home=/Volumes/Code/Previous Content/grad/2018_2019/web/assign3/Assignment3/dbms
+数据库类加载程序已启动 - derby.database.classpath=''
+----------------------------------------------------------------
+Sun Nov 04 18:04:12 EST 2018:
+正在使用类加载程序 sun.misc.Launcher$AppClassLoader@6f94fa3e 关闭数据库目录 /Volumes/Code/Previous Content/grad/2018_2019/web/assign3/Assignment3/dbms/PreferVegetable 上的实例 a816c00e-0166-e0f8-17d9-ffff83e258c1
+Sun Nov 04 18:04:12 EST 2018 Thread[DRDAConnThread_3,5,main] (DATABASE = PreferVegetable), (DRDAID = {2}), 数据库“PreferVegetable”已关闭。
+----------------------------------------------------------------
+Sun Nov 04 18:05:29 EST 2018:
+正在使用类加载程序 sun.misc.Launcher$AppClassLoader@6f94fa3e 引导数据库
+目录 /Volumes/Code/Previous Content/grad/2018_2019/web/assign3/Assignment3/dbms/PreferVegetable 中的 Derby 版本 The Apache Software Foundation - Apache Derby - 10.10.2.0 - (1582446) 实例 560740aa-0166-e0f8-17d9-ffff83e258c1
+已从 file:/Applications/NetBeans/glassfish-4.1.1/javadb/lib/derby.jar 加载
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_191-b12
+user.dir=/Applications/NetBeans/glassfish-4.1.1/javadb
+os.name=Mac OS X
+os.arch=x86_64
+os.version=10.13.6
+derby.system.home=/Volumes/Code/Previous Content/grad/2018_2019/web/assign3/Assignment3/dbms
+数据库类加载程序已启动 - derby.database.classpath=''
+Sun Nov 04 18:08:52 EST 2018 Thread[DRDAConnThread_3,5,main] Cleanup action starting
+java.sql.SQLException: 数据库“vegetable”未找到。
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.newEmbedSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.newEmbedSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.newSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleDBNotFound(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection40.<init>(Unknown Source)
+	at org.apache.derby.jdbc.Driver40.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.Driver20.connect(Unknown Source)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Caused by: java.sql.SQLException: 数据库“vegetable”未找到。
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	... 19 more
+============= begin nested exception, level (1) ===========
+java.sql.SQLException: 数据库“vegetable”未找到。
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.newEmbedSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.newEmbedSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.newSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleDBNotFound(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection40.<init>(Unknown Source)
+	at org.apache.derby.jdbc.Driver40.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.Driver20.connect(Unknown Source)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+============= end nested exception, level (1) ===========
+Cleanup action completed
+Sun Nov 04 18:08:52 EST 2018 Thread[DRDAConnThread_3,5,main] (DATABASE = vegetable), (DRDAID = {4}), 数据库“vegetable”未找到。
+Sun Nov 04 18:08:55 EST 2018 Thread[DRDAConnThread_3,5,main] Cleanup action starting
+java.sql.SQLException: 数据库“vegetable”未找到。
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.newEmbedSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.newEmbedSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.newSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleDBNotFound(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection40.<init>(Unknown Source)
+	at org.apache.derby.jdbc.Driver40.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.Driver20.connect(Unknown Source)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Caused by: java.sql.SQLException: 数据库“vegetable”未找到。
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	... 19 more
+============= begin nested exception, level (1) ===========
+java.sql.SQLException: 数据库“vegetable”未找到。
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.newEmbedSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.newEmbedSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.newSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleDBNotFound(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection40.<init>(Unknown Source)
+	at org.apache.derby.jdbc.Driver40.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.Driver20.connect(Unknown Source)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+============= end nested exception, level (1) ===========
+Cleanup action completed
+Sun Nov 04 18:08:55 EST 2018 Thread[DRDAConnThread_3,5,main] (DATABASE = vegetable), (DRDAID = {5}), 数据库“vegetable”未找到。
